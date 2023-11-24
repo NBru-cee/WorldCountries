@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+@layer utilities {
+    .card-text {
+        @apply mb-1 font-normal opacity-80 text-sm;
+    }
+
+    .info-text {
+        @apply text-white text-[0.9rem] font-normal mb-2;
+    }
+}
+
+body {
+    background: #212d38
+}
+
+input {
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 5px;
+    background: #2b3945;
+    border: none;
+    outline: none;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+
+select {
+    padding: 10px 25px;
+    background: hsl(209, 23%, 22%);
+    margin-bottom: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 25px;
+    color: #fff;
+    background: hsl(209, 23%, 22%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 120px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
